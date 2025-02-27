@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pacifico", cursive;
+    background-color: bisque;
+    ;
+}
+
+/* Start form  attributes */
+form {
+    width: 450px;
+    height: 500px;
+    border-radius: 5px;
+    margin: 8% auto;
+    box-shadow: 5px 10px 10px 10px #7f7c7c;
+    padding: 4%;
+}
+
+/* form Container */
+form .con {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+}
+
+/* the header form form */
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+/*title form form */
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+
+/*  A welcome message or an explanation of the login form */
+header p {
+    letter-spacing: 0.05em;
+}
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 12.5px 0px 15px 9px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* inputs form  */
+input[class="form-input"] {
+    width: 250px;
+    height: 50px;
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+input[id="txt-input"] {
+    width: 250px;
+}
+
+input[type="text"] {
+    min-width: 250px;
+}
+
+/* buttons  */
+button {
+    display: inline-block;
+    color: #252537;
+
+    width: 280px;
+    height: 50px;
+
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    text-align: center;
+    margin: 4% auto;
+    letter-spacing: 0.05em;
+}
+
+
+/* Sign Up button  */
+.sign-up {
+    background: #eb95c6;
+}
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}

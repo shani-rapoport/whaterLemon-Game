@@ -1,0 +1,315 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #bdd7ee;
+}
+
+/* back */
+#back {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 200%;
+}
+
+/* timer */
+#timer {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: white;
+  font-size: 200%;
+  font-family: "Pacifico", cursive;  padding: 0.5%;
+  padding-top: 1%;
+  border: rgb(241, 18, 76) 2px dashed;
+}
+
+/*place the watermelon*/
+.fruit {
+  position: absolute;
+  width: 12em;
+  height: 12em;
+  margin-bottom: 25%;
+  overflow: hidden;
+}
+
+
+/*Creates the shape of the watermelon*/
+.watermelon div,
+i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+
+
+/*kernels*/
+i {
+  border-top: 0.3em solid #252525;
+  border-bottom: 0.3em solid #252525;
+  border-left: 0.15em solid #252525;
+  border-right: 0.15em solid #252525;
+}
+
+/*outer shell*/
+.watermelon div:first-of-type {
+  border: 5.9em solid #90B73F;
+}
+
+/*inner shell*/
+.watermelon div:nth-of-type(2) {
+  border: 5.7em solid #D9E38F;
+}
+
+/*more inner shell*/
+.watermelon div:nth-of-type(3) {
+  border: 5.2em solid #FDFAF7;
+}
+
+/*the eatable shell*/
+.watermelon div:last-of-type {
+  border: 5em solid rgb(241, 18, 76);
+}
+
+/*position of kernels*/
+i:nth-of-type(1) {
+  top: 30px;
+  left: 15px;
+  transform: rotate(-12deg);
+}
+
+i:nth-of-type(2) {
+  top: 35px;
+  left: -20px;
+  transform: rotate(20deg);
+}
+
+i:nth-of-type(3) {
+  top: 10px;
+  left: 30px;
+  transform: rotate(100deg);
+}
+
+i:nth-of-type(4) {
+  left: 20px;
+  top: -5px;
+  transform: rotate(80deg);
+}
+
+i:nth-of-type(5) {
+  left: -45px;
+  transform: rotate(90deg);
+}
+
+
+i:nth-of-type(6) {
+  top: 15px;
+  transform: rotate(65deg);
+  left: -30px;
+}
+
+i:nth-of-type(7) {
+  top: -15px;
+  transform: rotate(102deg);
+  left: -30px;
+}
+
+i:nth-of-type(8) {
+  left: 35px;
+  top: -20px;
+  transform: rotate(75deg);
+}
+
+i:nth-of-type(9) {
+  left: -45px;
+  top: -30px;
+  transform: rotate(115deg);
+}
+
+i:nth-of-type(10) {
+  top: 15px;
+  left: -5px;
+}
+
+
+i:nth-of-type(11) {
+  top: -40px;
+  left: 15px;
+  transform: rotate(12deg);
+}
+
+i:nth-of-type(12) {
+  top: -45px;
+  left: -20px;
+  transform: rotate(-12deg);
+}
+
+i:nth-of-type(13) {
+  top: -50px;
+  left: 1px;
+  transform: rotate(6deg);
+}
+
+i:nth-of-type(14) {
+  top: -20px;
+}
+
+.drip {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  background-color: rgb(241, 18, 76);
+  border-radius: 50%;
+  border-top-right-radius: 0%;
+  transform: rotate(0.8turn);
+}
+
+
+
+/*a cup*/
+svg {
+  margin-top: 25%;
+  position: relative;
+  left: 0;
+  width: 140px;
+  stroke-width: none;
+  animation: slide 1s ease-out;
+  filter: url(#goo);
+  fill: rgb(241, 18, 76);
+  stroke: rgb(241, 18, 76);
+}
+
+path.glass {
+  stroke-width: 12;
+  stroke: gray;
+  fill: none;
+}
+
+rect.glass {
+  stroke: none;
+  fill: gray;
+}
+
+
+/* a message */
+#message {
+  position: relative;
+  background-color: bisque;
+  margin: auto;
+  padding: 0;
+  border: 5px solid white;
+  width: 50%;
+  height: 80%;
+  box-shadow: 0 4px 8px 0 bisque, 0 6px 20px 0 bisque;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  z-index: 1;
+  display: none;
+}
+
+#logo {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+
+@-webkit-keyframes animatetop {
+  from {
+    top: 0;
+    opacity: 1
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.options {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: bisque;
+  border: 3px solid aqua;
+  color: #ff1493;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  border-radius: 5px;
+}
+
+
+h1,
+h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Pacifico", cursive;
+  color: #ff1493;
+  text-shadow: 5px 5px aqua, 10px 10px 5px #ff8c00;
+}
+
+
+h3 {
+  font-size: 200%;
+}
+
+button {
+  align-items: center;
+}
+
+#home {
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 992px) 
+{
+  svg{
+    margin-top: 70%;
+  }
+  .fruit{
+    margin-bottom: 60%;
+  }
+
+}
+@media only screen and (max-width: 600px) 
+{
+  svg{
+    margin-top: 100%;
+  }
+  .fruit{
+    margin-bottom: 70%;
+  }
+  h1{
+    font-size: 50px;
+  }
+
+}

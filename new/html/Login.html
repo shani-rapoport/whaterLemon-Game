@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/Login.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/Login.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="overlay">
+      <!-- LOGN IN FORM-->
+      <form>
+        <!--   con = Container  for items in the form-->
+        <div class="con">
+          <!--     Start  header Content  -->
+          <header class="head-form">
+            <h2>Log In</h2>
+            <p>login here using your username and password</p>
+          </header>
+          <br>
+          <div class="field-set">
+          
+            <!--   user name Input-->
+            <input class="form-input"  type="email" name="email"  placeholder="@UserName" id="txt-input" required="required">
+            
+
+            <br>
+            <!--   Password Input-->
+            <input class="form-input" type="password" placeholder="Password" id="pwd" minlength="8"  name="password" required="required">
+            <br>
+              <!--      button LogIn -->
+            <button type="button" class="log-in" onclick="login()"> Log In </button>
+          </div>
+    
+          <!--   other buttons -->
+          <div class="other">
+
+            <!--     Sign Up button -->
+            <button class="btn submits sign-up" type="button" onclick="signUp()">Sign Up
+            </button>
+          </div>
+    
+          <!--   End Conrainer  -->
+        </div>
+    
+        <!-- End Form -->
+      </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <!--style css-->
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+
+<body>
+<!--go back-->
+<a id="back" href="../html/Main_Page.html">&#x27A1;&#xFE0F</a>
+<!--a timer-->
+<div id="timer">00:15</div>
+
+
+
+    <!--a message-->
+    <div id="message">
+      <img id="logo" src="../img/logo.png">
+      <h1 id="words">well done! u did it!</h1>
+      <h3>number of cups you filled:<p id="cups">0</p></h3>
+      <a id="play" class="options" href="../html/game.html">new game</a>
+      <a id="home" class="options" href="../html/Main_Page.html">home page</a>
+  </div>
+
+
+    <!--a fruit-->
+    <div class="fruit" >
+
+          <!-- a watermelon -->
+    <div class="watermelon"> 
+      <div></div><div></div><div></div>
+      <div><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+
+        <!--a drip-->
+    <div class="drip" id="drip"></div>
+  </div>
+
+
+<!--a cup-->
+
+<svg viewBox="0 0 100 140">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
+      <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+    </filter>
+  </defs>
+  <rect id="box" x="10" y="0" width="80" height="0">
+    <animate id="b" attributeName="y" from="100" to="0" dur="0.5s" fill="freeze" begin="1s" />
+  </rect>
+  <g>
+    <path class="glass" d="M0 0 L0 140 L100 140 L100 0">
+    </path>
+    <rect class="glass" x="0" y="110" width="100" height="30" />
+  </g>
+</svg>
+
+      <!--funcs js-->
+  <script type="text/javascript" src="../js/game.js"> </script>
+</body>
+</html>
